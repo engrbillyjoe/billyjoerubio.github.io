@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects | Billy Joe Rubio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav class="nav">
+    <a href="index.html">Home</a>
+    <a href="projects.html" class="active">Projects</a>
+  </nav>
+
+  <div class="container">
+    <h1>Relevant Projects</h1>
+
+    <!-- === Marilao Substation === -->
+    <div class="project-card" data-project="marilao">
+      <div class="project-image">
+        <img src="images/marilao_substation.jpg" alt="Marilao Substation">
+      </div>
+      <div class="project-content">
+        <h3>500kV/230kV Marilao EHV Substation</h3>
+        <p>
+          Participated in the configuration and commissioning of the Extra High Voltage (EHV) substation. 
+          Responsibilities included relay setting verification, secondary circuit wiring validation, 
+          and end-to-end SCADA integration with NGCP’s control center. Ensured correct 
+          data acquisition, signal mapping, and interlocking functionality for system safety and reliability.
+        </p>
+      </div>
+    </div>
+
+    <!-- === Laoag Solar === -->
+    <div class="project-card" data-project="laoag">
+      <div class="project-image">
+        <img src="images/laoag_solar.jpg" alt="Laoag Solar">
+      </div>
+      <div class="project-content">
+        <h3>Laoag 1 & 2 130MW Solar Power Plant</h3>
+        <p>
+          Led SCADA and relay protection configuration for two large-scale solar farms. 
+          Conducted communication setup via IEC 60870-5-104 and IEC 61850 protocols. 
+          Implemented and validated device mapping, real-time monitoring, and remote control commands 
+          for accurate performance data and reliable power dispatch.
+        </p>
+      </div>
+    </div>
+
+    <!-- === San Jose & Cordon === -->
+    <div class="project-card" data-project="sanjose">
+      <div class="project-image">
+        <img src="images/sanjose_solar.jpg" alt="San Jose Solar">
+      </div>
+      <div class="project-content">
+        <h3>San Jose & Cordon Solar Projects</h3>
+        <p>
+          Supported testing and configuration of NDME (Network Disturbance Monitoring Equipment) 
+          and protection relays for grid compliance. 
+          Performed relay coordination checks, data point verification, and testing of breaker control logic 
+          to ensure seamless integration with NGCP’s supervisory systems.
+        </p>
+      </div>
+    </div>
+
+    <!-- === Tiwi Geothermal === -->
+    <div class="project-card" data-project="tiwi">
+      <div class="project-image">
+        <img src="images/tiwi_geothermal.jpg" alt="Tiwi Geothermal">
+      </div>
+      <div class="project-content">
+        <h3>Tiwi Binary Geothermal Power Plant & Tiwi C NGCP Substation</h3>
+        <p>
+          Commissioned SCADA and protection systems for the Tiwi Binary Geothermal facility 
+          and its interconnection with the NGCP Tiwi C Substation. 
+          Configured relay communication, signal mapping, and control logic for generator synchronization 
+          and voltage regulation. Ensured safe and efficient coordination between geothermal units and the grid.
+        </p>
+      </div>
+    </div>
+
+    <!-- === Taft Solar === -->
+    <div class="project-card" data-project="taft">
+      <div class="project-image">
+        <img src="images/taft_solar.jpg" alt="Taft Solar Project">
+      </div>
+      <div class="project-content">
+        <h3>Taft Solar Power Project</h3>
+        <p>
+          Handled HV and PV SCADA configuration, protection relay setup, and PPC (Power Plant Controller) 
+          integration. Configured communication interfaces between the PPC, inverters, and grid controller 
+          to enable real-time monitoring, active/reactive power control, and automatic voltage regulation. 
+          Verified PPC logic to ensure proper synchronization and grid stability.
+        </p>
+      </div>
+    </div>
+
+    <!-- === Power Plant Control === -->
+    <div class="project-card" data-project="ppc">
+      <div class="project-image">
+        <img src="images/ppc_control.jpg" alt="Power Plant Controller">
+      </div>
+      <div class="project-content">
+        <h3>Power Plant Control (PPC) System Configuration</h3>
+        <p>
+          Designed and implemented AGC (Automatic Generation Control) and AVC (Automatic Voltage Control) logic 
+          within PPC systems for multiple solar and hybrid power plants. 
+          Ensured the proper response of real and reactive power commands, grid voltage support, 
+          and performance monitoring aligned with NGCP’s VRE (Variable Renewable Energy) testing standards.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== MODAL TEMPLATE ===== -->
+  <div id="projectModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <img id="modalImage" src="" alt="">
+      <h2 id="modalTitle"></h2>
+      <p id="modalDesc"></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
