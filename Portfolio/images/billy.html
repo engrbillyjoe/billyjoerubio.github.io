@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Billy Joe Rubio — Electrical Engineer</title>
+<style>
+/* Dark modern theme */
+:root{
+--bg:#0b0f14;
+--card:#0f1720;
+--muted:#94a3b8;
+--accent:#00d1ff; /* electric blue */
+--glass: rgba(255,255,255,0.03);
+--radius:14px;
+--maxw:1100px;
+--accent-2:#6ee7b7;
+font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+}
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+margin:0;background:linear-gradient(180deg,#050609 0%, #071018 60%);color:#e6eef6;line-height:1.5;
+-webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale;
+}
+.container{max-width:var(--maxw);margin:32px auto;padding:20px}
+
+
+/* Header */
+header{display:flex;align-items:center;justify-content:space-between;gap:16px}
+.logo{display:flex;align-items:center;gap:12px}
+.avatar{width:56px;height:56px;border-radius:12px;overflow:hidden;border:2px solid rgba(0,209,255,0.12)}
+.avatar img{width:100%;height:100%;object-fit:cover}
+.name{font-weight:700;font-size:18px}
+nav a{color:var(--muted);text-decoration:none;margin-left:18px}
+nav a:hover{color:var(--accent)}
+
+
+/* Hero */
+.hero{display:grid;grid-template-columns:1fr 420px;gap:28px;margin-top:20px;align-items:center}
+.hero-card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));padding:28px;border-radius:20px;box-shadow:0 6px 30px rgba(0,0,0,0.6);border:1px solid rgba(255,255,255,0.03)}
+.intro-title{font-size:28px;margin:0 0 8px}
+.intro-sub{color:var(--muted);margin:0 0 18px}
+.cta{display:inline-block;padding:10px 16px;border-radius:10px;background:linear-gradient(90deg,var(--accent),#6ee7b7);color:#021018;font-weight:600;text-decoration:none}
+
+
+/* Photo panel */
+.hero-photo{height:340px;border-radius:16px;overflow:hidden;border:1px solid rgba(255,255,255,0.04);background:linear-gradient(180deg,#081221,#0b1320);display:flex;align-items:center;justify-content:center}
+.hero-photo img{width:100%;height:100%;object-fit:cover}
+.hint{color:var(--muted);font-size:13px;margin-top:8px}
+
+
+/* Sections */
+section{margin-top:22px}
+.card{background:var(--card);padding:18px;border-radius:14px;border:1px solid rgba(255,255,255,0.03)}
+h2{margin:0 0 12px;color:var(--accent)}
+ul{padding-left:18px;margin:0}
+li{margin-bottom:8px;color:#d7e7f6}
+.subtle{color:var(--muted);font-size:13px}
+
+
+/* Projects grid */
+.projects{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.proj{border-radius:12px;overflow:hidden;background:var(--glass);padding:0;border:1px solid rgba(255,255,255,0.02)}
+.proj img{width:100%;height:140px;object-fit:cover;display:block}
+.proj .pinfo{padding:12px}
+.tag{display:inline-block;padding:6px 8px;border-radius:8px;background:rgba(0,209,255,0.08);color:var(--accent);font-weight:600;font-size:12px}
+
+
+/* Responsive */
+@media (max-width:980px){
+.hero{grid-template-columns:1fr}
+.projects{grid-template-columns:repeat(2,1fr)}
+}
+@media (max-width:560px){
+nav{display:none}
+.projects{grid-template-columns:1fr}
+.container{margin:14px}
+}
+
+
+/* Footer */
+footer{margin-top:28px;text-align:center;color:var(--muted);font-size:13px}
+
+
+/* small helpers */
+.muted{color:var(--muted)}
+.flex{display:flex;gap:12px;align-items:center}
+</style>
+</head>
+<body>
+<div class="container">
+<header>
+<div class="logo">
+<div class="avatar"><img src="/mnt/data/avatar.jpg" alt="Billy Joe Rubio Photo" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=400&q=60'"></div>
+<div>
+<div class="name">Billy Joe Rubio</div>
+<div class="subtle">Registered Electrical Engineer • Protection & SCADA</div>
+</div>
+</html>
